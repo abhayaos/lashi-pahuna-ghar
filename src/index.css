@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Montserrat', sans-serif;
+  --color-gold: #b8860b;
+  --color-goldDark: #8b6508;
+  --color-goldLight: #f5e6c8;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #ffffff;
+  color: #374151;
+}
+
+::selection {
+  background: rgba(184, 134, 11, 0.15);
+}

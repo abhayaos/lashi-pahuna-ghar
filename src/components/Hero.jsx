@@ -1,36 +1,32 @@
 import { Link } from "react-router-dom";
+import { Zap } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url(https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80)",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/50" />
-
       <div className="relative z-10 text-center px-4 max-w-3xl">
-        <h1 className="text-4xl sm:text-6xl font-bold text-white leading-tight">
+        <Zap className="w-10 h-10 text-gold mx-auto mb-5" />
+        <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase mb-3">
+          Nepal Tourism Hotels
+        </p>
+        <h1 className="font-heading text-4xl sm:text-6xl font-bold text-gray-900 leading-tight">
           Welcome to{" "}
-          <span className="text-amber-400">Lashi Pahuna Ghar</span>
+          <span className="text-gold">Lashi Pahuna Ghar</span>
         </h1>
-        <p className="mt-4 text-lg sm:text-xl text-gray-200">
-          Experience luxury and tradition in the heart of the Himalayas —
+        <p className="mt-4 text-lg sm:text-xl text-gray-500 max-w-2xl mx-auto font-body">
+          Experience luxury and tradition in the heart of the Himalayas 
           where every stay feels like home.
         </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/rooms"
-            className="bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition text-lg"
+            className="bg-gold hover:bg-goldDark text-white font-semibold px-8 py-3 rounded-full transition text-lg"
           >
             Explore Rooms
           </Link>
           <Link
             to="/contact"
-            className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-8 py-3 rounded-full transition text-lg"
+            className="border border-gray-300 text-gray-700 hover:bg-gray-900 hover:text-white font-semibold px-8 py-3 rounded-full transition text-lg"
           >
             Contact Us
           </Link>

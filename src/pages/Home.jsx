@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 import { Link } from "react-router-dom";
-import { Mountain, UtensilsCrossed, Sparkles, Map, Bed, Wifi, Car, ConciergeBell } from "lucide-react";
+import { Mountain, UtensilsCrossed, Sparkles, Map, Bed, Wifi } from "lucide-react";
 
 const features = [
   {
@@ -66,12 +66,10 @@ export default function Home() {
             We provide a complete range of services to make your stay unforgettable.
           </p>
         </div>
-        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
           {[
             { title: "Comfortable Rooms", desc: "Well-furnished rooms with modern amenities and Himalayan views.", icon: Bed },
             { title: "Free Wi-Fi", desc: "Stay connected with high-speed internet throughout the property.", icon: Wifi },
-            { title: "Airport Pickup", desc: "Hassle-free transportation to and from the nearest airport.", icon: Car },
-            { title: "Room Service", desc: "24/7 room service with a wide selection of meals and drinks.", icon: ConciergeBell },
           ].map(({ title, desc, icon: Icon }) => (
             <div key={title} className="group text-center p-7 rounded-xl bg-white border border-gray-200 hover:border-gold/50 hover:shadow-lg transition-all">
               <div className="flex justify-center mb-4">

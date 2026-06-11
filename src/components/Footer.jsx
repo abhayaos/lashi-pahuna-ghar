@@ -50,15 +50,10 @@ export default function Footer() {
         <div>
           <h4 className="font-heading text-gray-900 font-semibold mb-4 text-sm">Follow Us</h4>
           <div className="flex gap-3">
-            <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gold transition-colors text-gray-500 hover:text-white" aria-label="Facebook">
+            <a href="https://www.facebook.com/anand.shahi.353" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gold transition-colors text-gray-500 hover:text-white" aria-label="Facebook">
               <FaFacebook className="w-4 h-4" />
             </a>
-            <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gold transition-colors text-gray-500 hover:text-white" aria-label="Instagram">
-              <FaInstagram className="w-4 h-4" />
-            </a>
-            <a href="#" className="w-9 h-9 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gold transition-colors text-gray-500 hover:text-white" aria-label="TripAdvisor">
-              <SiTripadvisor className="w-4 h-4" />
-            </a>
+
           </div>
         </div>
       </div>
